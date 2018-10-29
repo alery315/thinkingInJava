@@ -30,6 +30,8 @@ public class ArraySearch {
             System.out.println(nextNum + " not found");
         }
 
+        System.out.println("hello,world");
+
     }
 
 }
