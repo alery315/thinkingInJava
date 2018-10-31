@@ -9,7 +9,7 @@ public class TerminationCondition {
 
         novel.checkIn();
 
-        //new Book(true);
+        new Book(true);
 
 
         System.gc();
