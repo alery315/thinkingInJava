@@ -25,14 +25,21 @@ public class Test_510 {
 
         List<Object> list = new ArrayList<>();
 
-        while (iterator.hasNext()) {
-            try {
-                list.add(jsonObject.getString((String) iterator.next()));
-            } catch (JSONException e) {
-                System.out.println(e.toString());
-            }
+
+        // for each 大法
+        for (String key : jsonObject.keySet()) {
+            list.add(jsonObject.getString(key));
         }
 
+        // iterator 迭代器
+//        while (iterator.hasNext()) {
+//            try {
+//                list.add(jsonObject.getString((String) iterator.next()));
+//            } catch (JSONException e) {
+//                System.out.println(e.toString());
+//            }
+//        }
+//
         Object[] objects = list.toArray();
 
         System.out.println(Arrays.toString(objects));
